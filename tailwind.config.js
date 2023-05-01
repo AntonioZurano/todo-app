@@ -3,13 +3,13 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
-  theme: {
+  theme: { 
     extend: {
       fontFamily: {
-        anton: "'anton', serif",
+        anton: "'Anton', serif",
         inter: "'inter', serif",
       }
-    },
+    }
   },
   plugins: [],
 }
