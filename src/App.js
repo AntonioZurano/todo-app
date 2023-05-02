@@ -34,9 +34,7 @@ function App() {
       <div className="container flex flex-col max-w-xl">
         <Title />
         <TodoInput />
-        <TodoList>
-
-        </TodoList>
+        <TodoList todos={todos}/>
       </div>
     </div>
   );
