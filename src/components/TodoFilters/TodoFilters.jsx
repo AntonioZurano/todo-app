@@ -20,7 +20,6 @@ const TodoFilters = (
             <button onClick={() => handleClearComplete() }className="text-gray-400 hover:text-white cursor-pointer transition-all duration-300 ease-in">
                 Clear Completed
             </button>
-
         </FiltersContainer>
     )
 }

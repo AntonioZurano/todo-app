@@ -29,4 +29,4 @@ const FilterButton = ({ action, active, filter}) => {
     )
 }
 
-export { FiltersContainer, ItemsLeft, FilterButtonContainer, FilterButton}
+export {FiltersContainer, ItemsLeft, FilterButtonContainer, FilterButton}
