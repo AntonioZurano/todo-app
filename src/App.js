@@ -59,18 +59,20 @@ function App() {
     setTodos(updateList)
   }
 
-  const handleDelete = (id) => {
-    const updateList = todos.filter(todo => todo.id !== id)
+  const handleDelete = (todo) => {
+    const updateList = todos.filter(t => t.id !== todo.id)
     setTodos(updateList)
   }
 
   const handleClearComplete = () => {
-    const updatedList = todos.filter( todo => !todo.completed);
-    setActiveFilter(updatedList);
+    const updatedList = todos.filter( t => !t.completed);
+    setTodos(updatedList);
+    setFilteredTodos(updatedList);
+    setActiveFilter("all");
   }
 
-  const showAllTodos = () => {
-    setActiveFilter('all')
+  function showAllTodos() {
+    setActiveFilter('all');
   }
 
   const showActiveTodos = () => {
